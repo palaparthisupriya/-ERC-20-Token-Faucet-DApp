@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  faucet-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"  # This maps your computer's 3000 to Docker's 80
+    restart: always
